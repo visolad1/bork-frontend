@@ -20,10 +20,11 @@ $arrow-left-icon: url('../../assets/icons/arrow-left.svg');
 }
 
 .main-slide {
-    width: 2020px;
+    width: 2200px;
     height: 100%;
-    background-size: 100%;
-    animation: transform 6s linear infinite;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    animation: transform 20s linear infinite;
 }
 
 .slide1 {
@@ -46,6 +47,10 @@ $arrow-left-icon: url('../../assets/icons/arrow-left.svg');
     animation-delay: 13s;
 }
 
+.slide-content{
+    width: 1477px;
+    margin: 0 auto;
+}
 
 .slick-arrow{
     width: 50px;
@@ -101,6 +106,6 @@ $arrow-left-icon: url('../../assets/icons/arrow-left.svg');
     }
 
     to{
-        background-position: -100px 0;
+        background-position: -500px 0;
     }
 }
