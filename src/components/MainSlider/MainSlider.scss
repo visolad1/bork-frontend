@@ -1,0 +1,106 @@
+$main_slide_img_1: url('../../assets/images/main-banner-f732.jpg');
+$main_slide_img_2: url('../../assets/images/main-banner-v810.jpg');
+$main_slide_img_3: url('../../assets/images/main-banner-d800.jpg');
+$main_slide_img_4: url('../../assets/images/main-banner-avalon.jpg');
+$arrow-right-icon: url('../../assets/icons/arrow-right.svg');
+$arrow-left-icon: url('../../assets/icons/arrow-left.svg');
+
+.main{
+    width: 100%;
+    height: 855px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.main-slide-link{
+    display: block;
+    width: 100%;
+    height: 855px;
+}
+
+.main-slide {
+    width: 2020px;
+    height: 100%;
+    background-size: 100%;
+    animation: transform 6s linear infinite;
+}
+
+.slide1 {
+    background-image: $main_slide_img_1;
+    animation-delay: 0s;
+}
+
+.slide2 {
+    background-image: $main_slide_img_2;
+    animation-delay: 4s;
+}
+
+.slide3 {
+    background-image: $main_slide_img_3;
+    animation-delay: 8s;
+}
+
+.slide4 {
+    background-image: $main_slide_img_4;
+    animation-delay: 13s;
+}
+
+
+.slick-arrow{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.slick-arrow:hover{
+    border: 1px solid rgb(255, 255, 255, 1);
+}
+
+.slick-next{
+    top: 90%;
+    right: 50px;
+}
+
+.slick-next::before{
+    content: $arrow-right-icon;
+}
+
+.slick-prev{
+    top: 90%;
+    left: 50px;
+}
+
+.slick-prev::before {
+    content: $arrow-left-icon;
+}
+
+.slick-dots{
+    bottom: 67px;
+}
+
+.slick-dots li{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.slick-active p{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+@keyframes transform{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: -100px 0;
+    }
+}
