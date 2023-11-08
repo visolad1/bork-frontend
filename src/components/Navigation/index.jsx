@@ -11,30 +11,30 @@ import user_icon from '../../assets/icons/user-icon.svg';
 
 function Navigation() {
   return (
-    <nav class='nav'>
-      <div class='flex-wrapper'>
+    <nav className='nav'>
+      <div className='flex-wrapper'>
         <a href='#'>
-          <img src={menu_icon} alt='menu icon' class='nav-menu-icon' />
+          <img src={menu_icon} alt='menu icon' className='nav-menu-icon' />
         </a>
         <a href='#'>
-          <img src={location_icon} alt='location icon' class='nav-location-icon' />
+          <img src={location_icon} alt='location icon' className='nav-location-icon' />
         </a>
         <a href='#'>
-          <div class='nav-phone-num'>8 800 500 88 99</div>
+          <div className='nav-phone-num'>8 800 500 88 99</div>
         </a>
       </div>
       <a href='#'>
-        <img src={logo_icon} alt='logo icon' class='nav-logo' />
+        <img src={logo_icon} alt='logo icon' className='nav-logo' />
       </a>
-      <div class='flex-wrapper'>
+      <div className='flex-wrapper'>
         <a href='#'>
-          <img src={bag_icon} alt='bag icon' class='nav-bag-icon' />
+          <img src={bag_icon} alt='bag icon' className='nav-bag-icon' />
         </a>
         <a href='#'>
-          <img src={search_icon} alt='search icon' class='nav-search-icon' />
+          <img src={search_icon} alt='search icon' className='nav-search-icon' />
         </a>
         <a href='#'>
-          <img src={user_icon} alt='user icon' class='nav-user-icon' />
+          <img src={user_icon} alt='user icon' className='nav-user-icon' />
         </a>
       </div>
     </nav>
