@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import './MainSlider.scss';
 import Slider from 'react-slick';
 
 function MainSlider() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -12,9 +9,6 @@ function MainSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    beforeChange: (current, next) => {
-      setCurrentSlide(next);
-    },
     pauseOnFocus: false,
     pauseOnDotsHover: true,
     autoplaySpeed: 5000,
@@ -36,6 +30,7 @@ function MainSlider() {
           <div className='main-slide slide1'>
             <div className='slide-content'>
               <h2 className='slide-title'>Фен-стайлер F732</h2>
+              <button className='btn'>подробнее</button>
             </div>
           </div>
         </a>
@@ -43,6 +38,7 @@ function MainSlider() {
           <div className='main-slide slide2'>
             <div className='slide-content'>
               <h2 className='slide-title'>Беспроводной моющий пылесос V810</h2>
+              <button className='btn'>подробнее</button>
             </div>
           </div>
         </a>
@@ -50,6 +46,7 @@ function MainSlider() {
           <div className='main-slide slide3'>
             <div className='slide-content'>
               <h2 className='slide-title'>GLED-маска D800</h2>
+              <button className='btn'>подробнее</button>
             </div>
           </div>
         </a>
@@ -57,6 +54,7 @@ function MainSlider() {
           <div className='main-slide slide4'>
             <div className='slide-content'>
               <h2 className='slide-title'>Массажная капсула AVALON</h2>
+              <button className='btn'>подробнее</button>
             </div>
           </div>
         </a>

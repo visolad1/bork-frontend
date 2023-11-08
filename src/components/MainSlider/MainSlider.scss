@@ -19,17 +19,18 @@ $arrow-left-icon: url('../../assets/icons/arrow-left.svg');
     height: 855px;
 }
 
+
+
 .main-slide {
-    width: 2200px;
+    width: 2350px;
     height: 100%;
     background-size: 100% 100vh;
     background-repeat: no-repeat;
-    animation: transform 20s linear infinite;
+    animation: transform 19s linear infinite;
 }
 
 .slide1 {
     background-image: $main_slide_img_1;
-    animation-delay: 0s;
 }
 
 .slide2 {
@@ -48,8 +49,15 @@ $arrow-left-icon: url('../../assets/icons/arrow-left.svg');
 }
 
 .slide-content{
-    width: 1477px;
+    width: 1600px;
+    height: 100%;
     margin: 0 auto;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
 }
 
 .slick-arrow{
@@ -100,12 +108,38 @@ $arrow-left-icon: url('../../assets/icons/arrow-left.svg');
     background-color: #fff;
 }
 
+.slide-title{
+    max-width: 40%;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.btn{
+    padding: 19px 31px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    border: 2px solid #EF6F2E;
+    border-radius: 27.5px;
+}
+
+.btn:hover{
+    background-color: #EF6F2E;
+}
+
 @keyframes transform{
-    from{
+    0% {
         background-position: 0 0;
     }
 
-    to{
-        background-position: -500px 0;
+    50%{
+        background-position: -400px 0;
+    }
+
+    100%{
+        background-position: -400px 0;
     }
 }
