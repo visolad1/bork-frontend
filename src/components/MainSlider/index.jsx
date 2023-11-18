@@ -10,8 +10,8 @@ function MainSlider() {
     slidesToScroll: 1,
     autoplay: true,
     pauseOnFocus: false,
-    pauseOnDotsHover: true,
-    autoplaySpeed: 5000,
+    pauseOnHover: false,
+    autoplaySpeed: 6000,
     customPaging: (i) => (
       <p
         style={{
