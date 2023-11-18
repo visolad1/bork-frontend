@@ -11,7 +11,7 @@ function MainSlider() {
     autoplay: true,
     pauseOnFocus: false,
     pauseOnHover: false,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 5000,
     customPaging: (i) => (
       <p
         style={{
